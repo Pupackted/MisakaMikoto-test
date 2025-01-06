@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misaka Mikoto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="{% static 'css/output.css' %}" rel="stylesheet" />
+
+    <style>
+      @font-face {
+        font-family: "UltraCondensedSansSerif";
+        src: url("assets/fonts/UltraCondensedSansSerif.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1
+      id="Title-misaka"
+      class="misakamikoto text-8xl font-bold mb-5 text-center font-[UltraCondensedSansSerif]"
+    >
+      MISAKA MIKOTO
+    </h1>
+
+    <p class="text-center font-[UltraCondensedSansSerif]">
+      Toaru Kagaku no Railgun
+    </p>
+    <div class="grid grid-cols-2 items-center justify-center w-full gap-5">
+      <img
+        class="h-[700px] w-auto misakamikotoimage cursor-pointer flex ml-auto"
+        src="https://comicvine.gamespot.com/a/uploads/original/11118/111187046/6975187-d9sjnt0xsaengjm.png%20orig.png"
+        alt="MISAKA MIKOTO"
+      />
+
+      <iframe
+        width="560"
+        height="315"
+        class="flex items-center justify-center"
+        src="https://www.youtube.com/embed/NOt2qxWtBv0?si=S8V2uV646a59IROa"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg">
+      <!-- Title -->
+      <h1 class="text-4xl font-bold text-gray-900 mb-4 text-center">
+        ⚡ Misaka Mikoto – The Electric Badass ⚡
+      </h1>
+
+      <!-- Introduction -->
+      <p class="text-gray-700 mb-6">
+        Meet <span class="font-bold text-blue-600">Misaka Mikoto</span>, the
+        unstoppable powerhouse of
+        <span class="font-bold text-blue-600">Academy City</span>. She’s not
+        just a high school girl – she’s a *Level 6 esper*, a true force of
+        nature, and the iconic
+        <span class="font-bold text-red-600">Railgun</span>. With a flick of her
+        hand, she can send a coin zooming faster than a bullet.
+      </p>
+
+      <!-- Powers Section -->
+      <div class="mt-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">
+          Her Powers – A Coin-Firing Machine of Justice (or Chaos)
+        </h2>
+
+        <div class="ml-4 space-y-4">
+          <div class="p-4 bg-blue-50 rounded-lg shadow">
+            <h3 class="text-lg font-bold text-gray-900">
+              ⚡ Electromagnetic Mastery
+            </h3>
+            <p class="text-gray-700 mt-2">
+              She can manipulate
+              <span class="font-bold text-blue-600">metal objects</span>, create
+              force fields, and unleash attacks with deadly precision. Her
+              control over electromagnetism lets her wield her powers with
+              devastating accuracy.
+            </p>
+          </div>
+
+          <div class="p-4 bg-green-50 rounded-lg shadow">
+            <h3 class="text-lg font-bold text-gray-900">🚀 Railgun Attack</h3>
+            <p class="text-gray-700 mt-2">
+              Her signature move – firing coins at
+              <span class="font-bold text-red-600">bullet-level speeds</span>.
+              She pierces walls and enemies alike with a force that only a true
+              esper could match.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cool Factor Section -->
+      <div class="mt-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">
+          Why She’s a Total Boss
+        </h2>
+        <p class="text-gray-700 mt-2">
+          Misaka Mikoto isn’t just about flashy moves. She combines
+          <span class="font-bold text-blue-600">intellect</span> with raw
+          psychic power. Whether it's quick strategy or raw combat skills, she
+          stands out as a fierce and unstoppable force.
+        </p>
+
+        <p class="text-gray-700 mt-2">
+          She’s the kind of esper who takes on enemies bigger than herself with
+          sheer
+          <span class="font-bold text-red-600">grit, determination,</span> and a
+          willingness to fight with everything she’s got.
+        </p>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="mt-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">
+          ⚡ In Conclusion – A Living Railgun of Awesomeness
+        </h2>
+        <p class="text-gray-700 mt-2">
+          Misaka Mikoto is a perfect blend of
+          <span class="font-bold text-blue-600">power, intelligence,</span> and
+          <span class="font-bold text-red-600">relentless spirit</span>. She
+          stands as a symbol of resilience and unstoppable strength, showing
+          that she can take on any challenge with style and sheer willpower.
+        </p>
+      </div>
+    </div>
+    <!-- balls -->
+    <div class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">
+        This is balls (testing backend) 😍
+      </h1>
+      <div class="djangotwo mt-5">
+        {% if access_records %}
+        <table class="border-black border-2">
+          <thead class="border-black border-2">
+            <th>Site Name</th>
+            <th>Date Accessed</th>
+          </thead>
+          {% for acc in access_records %}
+          <tr class="border-black border-2">
+            <td>{{ acc.name }}</td>
+            <td>{{ acc.date }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+        {% else %}
+        <p>NOT FOUND BALLS</p>
+        {% endif %}
+      </div>
+    </div>
+    <!-- balls end-->
+    <!-- login / register -->
+    <div class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg">
+      <!-- form -->
+      <form method="post">
+        <h1 class="text-2xl font-bold text-gray-900 mb-10">Log in / Sign up</h1>
+
+        {% if user.is_authenticated %}
+        <a
+          href="{% url 'logout' %}"
+          class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-2 px-6 rounded-md shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-4 focus:ring-indigo-300"
+          >Log Out</a
+        >
+        {% else %}
+        <div class="flex flex-row">
+          <p>No account?</p>
+          <img
+            style="width: 100px; height: 100px; margin-left: 20px"
+            src="https://i.imgflip.com/6cvg21.jpg?a482160"
+            alt="Misaka Mikoto"
+          />
+        </div>
+
+        <div class="flex my-10">
+          <a
+            href="{% url 'MisakaMikotoApp1:registration' %}"
+            class="text-center text-white font-extrabold text-xl md:text-3xl lg:text-4xl py-4 px-8 lg:py-6 lg:px-12 rounded-lg shadow-lg shadow-pink-500/50 bg-gradient-to-br from-pink-500 via-red-500 to-purple-600 hover:from-purple-600 hover:via-pink-500 hover:to-red-500 transform hover:scale-150 transition-all duration-100 ease-in-out border-4 border-white animate-bounce cursor-pointer"
+          >
+            Register Now! <br />(HOT MILF IN YOU AREA !!!)
+          </a>
+        </div>
+        <p class="mb-10">Or</p>
+        <a
+          href="{% url 'MisakaMikotoApp1:user_login' %}"
+          class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-2 px-6 rounded-md shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-4 focus:ring-indigo-300"
+        >
+          Login
+        </a>
+
+        {% endif %}
+      </form>
+    </div>
+    <!-- login / register end -->
+
+    <!-- random form test -->
+    <div class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">Misaka Mikoto 😍</h1>
+      <form class="mb-5">
+        <label for="userimput" class="mr-4">Enter Input:</label>
+        <input
+          id="userinput"
+          type="text"
+          value=""
+          placeholder="balls"
+          class="border-black border-2 px-4 py-1 rounded-sm focus:outline-none focus:border-green-500"
+        />
+      </form>
+      <form method="get">
+        <h3 class="text-1xl font-bold text-gray-900 mb-2">
+          Goku or Misaka Mikoto?
+        </h3>
+        <!-- col -->
+        <div class="flex flex-col">
+          <div>
+            <label for="MisakaMikoto">Misaka Mikoto 😍😍😍😍😍</label>
+            <input
+              id="MisakaMikoto"
+              type="radio"
+              name="gokuormisaka"
+              value="MisakaMikoto"
+            />
+          </div>
+          <div>
+            <label for="Goku">Goku 🤢🤢🤢🤢🤢🤢🤢🤢</label>
+            <input id="Goku" type="radio" name="gokuormisaka" value="Goku" />
+          </div>
+          <h3 class="text-1xl font-bold text-gray-900 mb-2 mt-6">
+            How would you rate Misaka Mikoto?
+          </h3>
+          <div class="flex">
+            <select class="border-2 border-black px-2" name="rating" id="">
+              <option value="segs">I want to sleep with her</option>
+              <option value="beautiful">
+                I want to be shot by her rail gun
+              </option>
+              <option value="Good">I want to hold hands with her</option>
+            </select>
+          </div>
+          <h3 class="text-1xl font-bold text-gray-900 mb-2 mt-6">
+            Add comment about Misaka Mikoto
+          </h3>
+          <textarea
+            class="border-2 border-black px-2 py-1"
+            name=""
+            id=""
+            rows="10"
+          ></textarea>
+          <input
+            class="px-4 py-1 rounded-sm focus:outline-none bg-blue-600 text-white cursor-pointer mt-5"
+            type="submit"
+            name=""
+            value="Submit"
+          />
+        </div>
+        <!-- col end -->
+      </form>
+    </div>
+    <!-- random form test end -->
+
+    <!-- ganti baju -->
+    <div class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-lg">
+      <h1 class="text-2xl font-bold text-gray-900 mb-2">
+        Click To Change Color!
+      </h1>
+      <div class="flex">
+        <svg
+          width="311"
+          height="408"
+          viewBox="0 0 311 408"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="142.5"
+            cy="56"
+            rx="57.5"
+            ry="56"
+            fill="#D9D9D9"
+            class="head"
+          />
+          <rect
+            x="100"
+            y="112"
+            width="85"
+            height="172"
+            fill="#D9D9D9"
+            class="body-person"
+          />
+          <rect
+            x="105.716"
+            y="273"
+            width="38"
+            height="129"
+            transform="rotate(17 105.716 273)"
+            fill="#D9D9D9"
+            class="left-leg"
+          />
+          <rect
+            x="147"
+            y="284.11"
+            width="38"
+            height="129"
+            transform="rotate(-17 147 284.11)"
+            fill="#D9D9D9"
+            class="right-leg"
+          />
+          <rect
+            x="185"
+            y="134"
+            width="100"
+            height="33"
+            fill="#D9D9D9"
+            class="right-hand"
+          />
+          <rect
+            y="134"
+            width="100"
+            height="33"
+            fill="#D9D9D9"
+            class="left-hand"
+          />
+          <rect
+            x="298.22"
+            y="52"
+            width="13"
+            height="224"
+            transform="rotate(18 298.22 52)"
+            fill="#D9D9D9"
+            class="weapon"
+          />
+        </svg>
+        <!-- Color Picker -->
+        <input type="color" id="colorPicker" style="display: none" />
+      </div>
+    </div>
+    <!-- ganti baju end -->
+  </body>
+  <script src="{% static 'scripts/balls.js' %}"></script>
+</html>

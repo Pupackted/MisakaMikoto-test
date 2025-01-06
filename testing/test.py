@@ -1,0 +1,2 @@
+balls = "memek"
+print(balls)
